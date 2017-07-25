@@ -1,12 +1,12 @@
 <?php
 namespace BitrixAdminExtension\Page\Highload
 {
-    use BitrixAdminExtension\Page\BaseList;
+    use BitrixAdminExtension\Page\BaseGrid;
 
     /**
      * Страница редактирования элемента Highload-блока.
      */
-    class List extends BaseList
+    class Grid extends BaseList
     {
         use Base;
 
@@ -16,7 +16,7 @@ namespace BitrixAdminExtension\Page\Highload
          */
         protected static function getPath()
         {
-            return Helper::LIST;
+            return Helper::GRID;
         }
     }
 }

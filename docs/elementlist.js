@@ -1,0 +1,3 @@
+
+var ApiGen = ApiGen || {};
+ApiGen.elements = [["c","BitrixAdminExtension\\Control\\Base"],["c","BitrixAdminExtension\\Control\\Button"],["c","BitrixAdminExtension\\Control\\ButtonTypes"],["c","BitrixAdminExtension\\Control\\Tab"],["c","BitrixAdminExtension\\Control\\Traits\\Template"],["c","BitrixAdminExtension\\Page\\Base"],["c","BitrixAdminExtension\\Page\\BaseEdit"],["c","BitrixAdminExtension\\Page\\BaseGrid"],["c","BitrixAdminExtension\\Page\\Custom"],["c","BitrixAdminExtension\\Page\\CustomEdit"],["c","BitrixAdminExtension\\Page\\CustomGrid"],["c","BitrixAdminExtension\\Page\\Highload\\Base"],["c","BitrixAdminExtension\\Page\\Highload\\Edit"],["c","BitrixAdminExtension\\Page\\Highload\\Grid"],["c","BitrixAdminExtension\\Traits\\Asset"]];

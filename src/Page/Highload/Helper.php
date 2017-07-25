@@ -19,7 +19,7 @@ namespace BitrixAdminExtension\Page\Highload
         /**
          * Адрес страницы списка элементов.
          */
-        const LIST = '/bitrix/admin/highloadblock_rows_list.php';
+        const GRID = '/bitrix/admin/highloadblock_rows_list.php';
 
 
 

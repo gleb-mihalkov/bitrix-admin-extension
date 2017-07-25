@@ -4,7 +4,7 @@ namespace BitrixAdminExtension\Page
     /**
      * Базовый класс страницы списка элементов.
      */
-    abstract class BaseList extends Base
+    abstract class BaseGrid extends Base
     {
         /**
          * Создает экземпляр класса.

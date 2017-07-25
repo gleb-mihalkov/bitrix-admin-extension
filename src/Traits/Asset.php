@@ -11,18 +11,21 @@ namespace BitrixAdminExtension\Traits
     {
         /**
          * Список JS-файлов, которые должны быть добавлены на страницу.
+         * @internal
          * @var array
          */
         protected $js = [];
 
         /**
          * Список CSS-файлов, которые должны быть добавлены на страницу.
+         * @internal
          * @var array
          */
         protected $css = [];
 
         /**
          * Список строк, которые должны быть добавлены в секцию HEAD страницы.
+         * @internal
          * @var array
          */
         protected $head = [];
