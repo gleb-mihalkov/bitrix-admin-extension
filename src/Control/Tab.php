@@ -46,11 +46,11 @@ namespace BitrixAdminExtension\Control
          */
         public function getData()
         {
-            $data = [
-                'DIV' => $this->id,
-                'TAB' => $this->text,
-                'TITLE' => $this->title
-            ];
+            $data = parent::getData();
+
+            $data['TITLE'] = $this->title;
+            $data['DIV'] = $this->id;
+            $data['TAB'] = $this->text;
 
             $content = $this->render();
             $content = $content ? $content : '<div></div>';

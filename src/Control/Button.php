@@ -51,11 +51,11 @@ namespace BitrixAdminExtension\Control
          */
         public function getData()
         {
-            $data = [
-                'TEXT' => $this->text,
-                'LINK' => $this->link,
-                'ICON' => $this->type
-            ];
+            $data = parent::getData();
+
+            $data['TEXT'] = $this->text;
+            $data['LINK'] = $this->link;
+            $data['ICON'] = $this->type;
 
             if ($this->tooltip)
             {

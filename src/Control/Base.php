@@ -12,10 +12,14 @@ namespace BitrixAdminExtension\Control
 
         /**
          * Получает данные об элементе управления в виде ассоциативного массива
-         * для вставки в методы ядра Битрикс.
+         * для вставки в методы ядра Битрикс. Виртуальный метод.
          * @return array Ассоциативный массив.
          */
-        abstract public function getData();
+        public function getData()
+        {
+            $this->initialize();
+            return [];
+        }
         
         /**
          * Текст элемента.
@@ -31,5 +35,12 @@ namespace BitrixAdminExtension\Control
         {
             $this->text = $text;
         }
+
+        /**
+         * Инициализирует элемент управления перед реальной добавкой на страницу.
+         * Виртуальный метод.
+         * @return void
+         */
+        public function initialize() {}
     }
 }
