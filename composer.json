@@ -1,5 +1,5 @@
 {
-    "name": "gm/bitrix-admin-extention",
+    "name": "gm/bitrix-admin-extension",
     "description": "Библиотека для расширения админ-панели Битрикс.",
     "type": "library",
     "authors": [
