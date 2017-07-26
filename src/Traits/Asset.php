@@ -85,9 +85,25 @@ namespace BitrixAdminExtension\Traits
         {
             $asset = BitrixAsset::getInstance();
 
-            foreach ($this->js as $js) $asset->addJs($js);
-            foreach ($this->css as $css) $asset->addCss($css);
-            foreach ($this->head as $head) $asset->addString($head);
+            $script = '<script type="text/javascript" src="%s"></script>';
+            $style = '<link rel="stylesheet" type="text/css" href="%s">';
+
+            foreach ($this->js as $js)
+            {
+                $string = sprintf($script, $js);
+                $asset->addString($string);
+            }
+
+            foreach ($this->css as $css)
+            {
+                $string = sprintf($style, $css);
+                $asset->addString($string);
+            }
+
+            foreach ($this->head as $head)
+            {
+                $asset->addString($head);
+            }
         }
     }
 }
